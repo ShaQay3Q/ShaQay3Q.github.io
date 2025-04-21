@@ -1,0 +1,499 @@
+/* inter-100 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 100;
+	src: url("./fonts/inter-v13-latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-200 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 200;
+	src: url("./fonts/inter-v13-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-300 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 300;
+	src: url("./fonts/inter-v13-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	src: url("./fonts/inter-v13-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 600;
+	src: url("./fonts/inter-v13-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	src: url("./fonts/inter-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-800 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 800;
+	src: url("./fonts/inter-v13-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-900 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 900;
+	src: url("./fonts/inter-v13-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+	--fs-smaller: 0.8rem;
+	--fs-small: 1rem;
+	--fs-medium: 1.1rem;
+	--fs-large: 1.2rem;
+	--fs-f: 10vh;
+	--fs-rem: 1.5rem;
+	--fw-rem: 700;
+	--fw-medium: 600;
+
+	--fc-black: rgba(0, 0, 0, 0.7);
+	--fc-softblack: rgba(0, 0, 0, 0.9);
+	--fc-darkgray: rgba(34, 40, 50, 1);
+	--fc-darkgreyleight: rgba(34, 40, 50, 0.7);
+	--fc-grey: rgba(119, 123, 133, 1);
+	--lc-grey: rgba(119, 123, 133, 0.6);
+	--shadow: rgba(119, 123, 133, 0.3);
+
+	/* --bgc: #f1f4f6; */
+	--bgc: #ffe8f8;
+	--lc-home: #56a4c0;
+	--lc-one: #ca4e8a;
+	--lc-two: #ff6262;
+	--lc-three: #f6995c;
+	--lc-four: #9fc088;
+}
+
+@media (max-width: 427px) {
+	:root {
+		--fs-rem: 1rem;
+		--fw-rem: 700;
+		/* --fs-lg: 2.25rem; */
+	}
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: "Inter", sans-serif;
+	margin-top: 60px;
+	background-color: var(--bgc);
+}
+
+h1 {
+	font-size: var(--fs-rem);
+	font-weight: var(--fw-rem);
+	color: var(--fc-black);
+}
+
+.box {
+	background-color: var(--bgc);
+	border: 5px solid darkblue;
+	width: 20vw;
+	height: 20vh;
+	/* font-size: var(--fs-rem); */
+}
+
+p {
+	font-size: var(--fs-medium);
+	font-weight: var(--fw-medium);
+	color: var(--fc-darkgreyleight);
+	word-wrap: break-word;
+	max-width: 550px;
+}
+
+a {
+	text-decoration: none;
+	font-size: var(--fs-small);
+	font-weight: 400;
+	color: var(--fc-darkgray);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+li {
+	display: inline-block;
+	color: var(--fc-darkgray);
+}
+
+/*===============================================================================================
+                        UTILS
+================================================================================================*/
+.flex {
+	display: flex;
+}
+
+.flexrow {
+	flex-direction: row;
+}
+
+.flexcolumn {
+	flex-direction: column;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-evenly {
+	justify-content: space-evenly;
+}
+
+.justify-content {
+	justify-content: center;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.justify-self-center {
+	justify-self: center;
+}
+
+.align-self-center {
+	align-self: center;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-right {
+	justify-content: right;
+}
+
+.self-end {
+	justify-self: end;
+}
+
+.self-start {
+	justify-self: start;
+}
+
+.align--bottom {
+	justify-self: last baseline;
+}
+
+.fit-content {
+	max-width: fit-content;
+}
+
+.container {
+	max-width: 1400px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+}
+
+span {
+	display: inline-block;
+}
+
+.icon {
+	height: 24px;
+	width: 24px;
+}
+/* hr {
+  background-color: var(--fc-grey);
+} */
+
+ul {
+	display: inline-block;
+}
+
+.line {
+	height: 1hv;
+	border: solid var(--fc-grey);
+}
+
+/* hr {
+  background-color: var(--fc-grey);
+} */
+
+.shadow {
+	box-shadow: 3px 3px var(--shadow);
+}
+
+.tengap {
+	gap: 10px;
+}
+
+.sixgap {
+	gap: 6px;
+}
+
+.wrapper {
+	gap: 12px;
+}
+
+/*===============================================================================================
+                        HEADER
+================================================================================================*/
+
+.logo {
+	height: 30pxBlog;
+	width: 30px;
+}
+
+.dot {
+	width: 7px;
+	height: 7px;
+}
+
+.txt-style {
+	font-size: var(--fs-small);
+	font-weight: 900;
+	color: var(--fc-darkgray);
+	letter-spacing: 3px;
+	text-shadow: 3px 2px var(--shadow);
+}
+
+.main-header__nav {
+	gap: 6px;
+}
+
+.main-header__nav > ul {
+	gap: 6px;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+}
+
+/*===============================================================================================
+                        MAIN
+================================================================================================*/
+
+main {
+	max-width: fit-content;
+	margin: auto;
+}
+
+.content > div {
+	min-width: fit-content;
+	margin-right: 5vw;
+}
+
+.content > section {
+	gap: 20px;
+}
+
+.avatar {
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+}
+
+.txt {
+	gap: 10px;
+}
+.txt > span {
+	color: var(--fc-black);
+	font-size: var(--fs-large);
+	font-weight: 500;
+}
+
+/****************
+  BUBBLE NAV
+****************/
+.bubble-nav > ul {
+	gap: 5px;
+}
+
+.bubble-link {
+	height: 102px;
+	width: 102px;
+	border-radius: 50%;
+	border: solid 1px;
+	font-size: var(--fs-smaller);
+	font-weight: var(--fw-medium);
+	justify-content: center;
+	text-align: center;
+}
+
+#about {
+	background-color: var(--lc-home);
+	border-color: var(--lc-home);
+}
+
+#coding {
+	background-color: var(--lc-one);
+	border-color: var(--lc-one);
+}
+
+#activism {
+	background-color: var(--lc-two);
+	border-color: var(--lc-two);
+}
+
+#cv {
+	background-color: var(--lc-three);
+	border-color: var(--lc-three);
+}
+
+#blog {
+	background-color: var(--lc-four);
+	border-color: var(--lc-four);
+}
+
+/*===============================================================================================
+                        FOOTER
+================================================================================================*/
+
+.copy-right {
+	color: var(--fc-grey);
+}
+
+/*===============================================================================================
+                        MEDIA QUERIES
+================================================================================================*/
+
+/* @media (max-width: 1000px) {
+  .main-header__nav {
+    display: none;
+  }
+} */
+
+@media (max-width: 900px) {
+	.main-header__nav hr,
+	ul:nth-child(1) {
+		display: none;
+	}
+}
+
+@media (max-width: 900px) {
+	.veganburger {
+		display: block; /* Show on smaller screens */
+	}
+}
+
+.veganburger {
+	/* visibility: hidden; */
+	display: none;
+	cursor: pointer;
+}
+
+.burger-menu {
+	display: none;
+	cursor: pointer;
+}
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: var(--fc-darkgray);
+}
+
+.veganburger.active .bar:nth-child(2) {
+	opacity: 0;
+}
+.veganburger.active .bar:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+.veganburger.active .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+	.nav-menu {
+		position: fixed;
+		left: -100%; /* Start off-screen */
+		top: 60px;
+		flex-direction: column;
+		background-color: var(--bgc);
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+		box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+		z-index: 1000;
+	}
+
+	.nav-menu.active {
+		left: 0; /* Slide in when active */
+	}
+}
+
+.nav-menu {
+	position: fixed;
+	left: 100%;
+	top: 70px;
+	opacity: 0.5;
+	flex-direction: column;
+	background-color: red;
+	width: 100%;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.nav-item {
+	margin: 16px 0;
+}
+
+.nav-menu.active {
+	left: 0;
+}
+
+/* .main-header__nav {
+  } */

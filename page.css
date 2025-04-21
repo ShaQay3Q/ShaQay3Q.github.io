@@ -1,0 +1,120 @@
+/* Reset and Base */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	line-height: 1.6;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+ul {
+	list-style: none;
+}
+
+/* Utility Classes */
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 1rem;
+}
+.flex {
+	display: flex;
+}
+.flexrow {
+	flex-direction: row;
+}
+.flexcolumn {
+	flex-direction: column;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.justify-evenly {
+	justify-content: space-evenly;
+}
+.align-center {
+	align-items: center;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+.wrapper {
+	padding: 1rem;
+}
+
+/* Header and Nav */
+.logo {
+	height: 40px;
+}
+.main-nav ul {
+	gap: 1rem;
+}
+.main-nav {
+	display: none;
+}
+
+.burger-button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 0.5rem;
+}
+.burger-line {
+	width: 25px;
+	height: 3px;
+	background-color: #333;
+}
+
+/* Burger Menu Styles */
+.burger-menu {
+	display: none;
+	flex-direction: column;
+	background-color: #f9f9f9;
+	padding: 1rem;
+}
+.burger-menu ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.burger-menu.show {
+	display: flex;
+}
+.hidden {
+	display: none;
+}
+
+/* Footer */
+.footer-section {
+	margin-top: 1rem;
+}
+.footer-section h2 {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+.social-links {
+	display: flex;
+	gap: 1rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+	.main-nav {
+		display: block;
+	}
+	.burger-button {
+		display: none;
+	}
+	.burger-menu {
+		display: none !important;
+	}
+}

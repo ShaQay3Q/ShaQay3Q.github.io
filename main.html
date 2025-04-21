@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./burgermenu.js" defer></script>
+</head>
+
+<body>
+    <!--=====================================
+                HEADER
+    =======================================-->
+
+    <header class="main-header">
+        <div class="container flex flexrow justify-between wrap">
+            <div class="wrapper flex flexrow align-items-center self-start">
+                <img class="logo" src="./images/logo.png" alt="logo">
+                <span class="txt-style">Shaghayegh Sahandi</span>
+                <span>Portfolio</span>
+                <img class="dot align-bottom" src="./images/circle-32.png" alt="dot icon">
+            </div>
+            <nav class="main-header__nav flex flexcolumn wrap">
+
+                <ul class="nav-menu flex flexrow wrap items-center self-center">
+                    <!-- <li class="nav-item"><a href="#">About me</a></li> -->
+                    <li class="bubble-link shadow flex" id="about">
+                        <!-- <li><a href="#">Peek Inside My World</a></li> -->
+                    <li>|</li>
+                    <li class="nav-item"><a href="#">Code Journey</a></li>
+                    <li>|</li>
+                    <li class="nav-item"><a href="#">Activism Journey</a></li>
+                    <li>|</li>
+                    <li class="nav-item"><a href="#">Professional Pathway</a></li>
+                    <li>|</li>
+                    <li class="nav-item"><a href="#">Blog</a></li>
+                </ul>
+                <!-- <div class="line"></div> -->
+                <hr>
+                <nav class="flex flexrow wrap justify-content-right align-items-center">
+                    <!-- <button class="veganburger" aria-label="Toggle menu"> -->
+                    <div class="veganburger" role="button" tabindex="0" aria-label="Toggle navigation menu">
+
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <!-- </button> -->
+                    <ul class="flex flexrow wrap justify-content-right sixgap">
+                        <li><a href="#">HOME</a></li>
+                        <li><img class="icon" src="./images/searchone.svg" alt="Serach"></li>
+                    </ul>
+                </nav>
+                <div>
+
+                    <!-- <hr> -->
+                    <ul class="flex align-items-center">
+                        <li id="burger-menu"></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--=====================================
+                MAIN
+    =======================================-->
+    <main class="container">
+        <div class="content flex flexrow justify-content-center">
+            <div class="flex">
+                <img class="avatar shadow self-center" src="./images/sh.png" alt="Portrait of Shaghayegh Sahandi">
+            </div>
+            <section class="flex flexcolumn">
+                <section class="txt flex flexcolumn">
+                    <h1>Hey there!</h1>
+                    <span>A Bit About Me:</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, laboriosam esse natus ipsam,
+                        veniam accusamus aliquid, eos eligendi iusto facere optio recusandae facilis ut quaerat quia.
+                        Exercitationem quae accusamus minus?
+                        Modi magnam vitae accusamus fugit nesciunt praesentium atque expedita debitis! Earum pariatur
+                        dolor ut quasi accusamus. Doloribus sapiente, eligendi deleniti fuga modi voluptatum adipisci
+                        maxime ipsum qui laudantium omnis et.
+                        Porro, odit possimus cupiditate quaerat sint quia laborum dolor maiores quae reprehenderit modi
+                        debitis quos odio aspernatur aliquid excepturi nihil necessitatibus vitae, amet quidem similique
+                        numquam earum iste dolore? Impedit!
+                        Eos dignissimos laudantium veniam nihil ducimus, repellendus reiciendis facilis. Cum
+                        exercitationem omnis, placeat, eius deserunt corrupti libero, laudantium a nulla quidem
+                        voluptate molestiae cumque id dolorem quas velit sunt reiciendis!
+                        Eligendi sunt a ullam itaque.</p>
+                </section>
+                <div class="bubble-nav">
+                    <ul class="flex align-items-center">
+                        <li class="bubble-link shadow flex" id="about">
+                            <a class="flex align-self-center" href="#">About me!
+                            </a>
+                        </li>
+                        <li class="bubble-link shadow flex" id="coding">
+                            <a class="flex align-self-center" href="#">Code journey</a>
+                        </li>
+                        <li class="bubble-link shadow flex" id="activism">
+                            <a class="flex align-self-center" href="#">Activism journey</a>
+                        </li>
+                        <li class="bubble-link shadow flex" id="cv">
+                            <a class="flex align-self-center" href="#">Professional pathway</a>
+                        </li>
+                        <li class="bubble-link shadow flex" id="blog">
+                            <a class="flex align-self-center" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!--=====================================
+                FOOTER
+    =======================================-->
+    <footer class="container flex flexcolumn wrap wrapper">
+        <hr>
+        <section class="flex flexrow wrap justify-evenly wrapper">
+            <address class="flex flexcolumn tengap fexgrowone fit-content">
+                <h3>Contact:</h3>
+                <div class="flex flexrow sixgap fit-content">
+                    <img class="icon" src="./images/phone.svg" alt="phone">
+                    <span>017685623723</span>
+                </div>
+                <div class="flex flexrow sixgap fit-content">
+                    <img class="icon" src="./images/emailat.svg" alt="email">
+                    <span>shaghay3gh@gmail.com</span>
+                </div>
+            </address>
+            <section class="flex flexcolumn tengap fit-content">
+                <h3>Find Me:</h3>
+                <div class="flex flexrow sixgap fit-content">
+                    <img class="icon" src="./images/github.svg" alt="Github">
+                    <span>ShaQay3Q</span>
+                </div>
+                <div class="flex flexrow sixgap fit-content">
+                    <img class="icon" src="./images/discord.svg" alt="Discord">
+                    <span>shaghay3gh_57080</span>
+                </div>
+            </section>
+            <section class="flex flexcolumn tengap">
+                <h3>Upcoming Events:</h3>
+                <div class="flex flexrow sixgap">
+                    <img class="icon" src="./images/event.svg" alt="event">
+                    <span>Event Name</span>
+                </div>
+                <div class="flex flexrow sixgap">
+                    <img class="icon" src="./images/event.svg" alt="event">
+                    <span>Event Name</span>
+                </div>
+                <div class="flex flexrow sixgap">
+                    <img class="icon" src="./images/event.svg" alt="event">
+                    <span>Event Name</span>
+                </div>
+            </section>
+            <div class="copy-right flex flexrow tengap align-items-center">
+                <img class="icon" src="./images/copyright.svg" alt="copy-right sign">
+                <span>Designed by Shaghayegh</span>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

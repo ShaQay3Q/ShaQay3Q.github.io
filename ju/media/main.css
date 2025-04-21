@@ -1,0 +1,105 @@
+
+
+/* body{
+    background-color: brown;
+} */
+
+/* @media  (min-width: 300px) and (max-width: 760px){
+    body {
+        background-color: aquamarine;
+    }
+} */
+
+/* @media (orientation: portrait){
+    body {
+        background-color: red;
+    }
+} */
+
+/* @media (600px < width < 900px){
+    body {
+        background-color: aquamarine;
+    }
+} */
+
+/* @media print {
+    img {
+        display: none;
+    }
+}
+
+@media(prefers-color-scheme: dark){
+    body{
+        background-color: black;
+    }
+} */
+
+
+html {
+    font-size: 100%;
+}
+
+
+ :root{
+    --fs-small: 0.8rem;
+    --fs-medium: 1.2rem;
+    --fs-large: 1.6rem;
+    --fs-xlarge: 3rem
+}
+
+@media (min-width: 850px){
+    :root{
+        --fs-small: 1.2rem;
+        --fs-medium: 1.6rem;
+        --fs-large: 3rem;
+        --fs-xlarge: 6rem
+    }
+}
+
+@media (min-width: 1200px){
+    :root{
+        --fs-small: 1.2rem;
+        --fs-medium: 1.6rem;
+        --fs-large: 3rem;
+        --fs-xlarge: 6rem
+    }
+}
+
+h1{
+    font-size: var(--fs-xlarge);
+}
+h2{
+    font-size: var(--fs-large);
+}
+p{
+    font-size: var(--fs-medium);
+}
+small{
+    font-size: var(--fs-small);
+} 
+
+
+/* h1{
+    font-size: clamp(24px, 15vw, 100px);
+} */
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+
+div{
+   height: 100px;
+    background-color: brown;
+}
+
+@media (min-width: 1024px){
+    main{
+        flex-direction: row;
+    }
+    div{
+        flex-grow: 1;
+    }
+}
