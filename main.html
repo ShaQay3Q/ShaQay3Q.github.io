@@ -7,28 +7,27 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="./burgermenu.js" defer></script>
+    <!-- <script src="./burgermenu.js" defer></script> -->
 </head>
 
 <body>
     <!--=====================================
                 HEADER
     =======================================-->
-
     <header class="main-header">
         <div class="container flex flexrow justify-between wrap">
-            <div class="wrapper flex flexrow align-items-center self-start">
-                <img class="logo" src="./images/logo.png" alt="logo">
-                <span class="txt-style">Shaghayegh Sahandi</span>
+            <section class="wrapper flex flexrow align-items-center self-start">
+                <img id="logo" src="./images/logo.png" alt="logo">
+                <h1>Shaghayegh Sahandi</h1>
                 <span>Portfolio</span>
                 <img class="dot align-bottom" src="./images/circle-32.png" alt="dot icon">
-            </div>
+            </section>
             <nav class="main-header__nav flex flexcolumn wrap">
 
-                <ul class="nav-menu flex flexrow wrap items-center self-center">
+                <ul>
                     <!-- <li class="nav-item"><a href="#">About me</a></li> -->
-                    <li class="bubble-link shadow flex" id="about">
-                        <!-- <li><a href="#">Peek Inside My World</a></li> -->
+                    <li class="nav-item"><a href="#">About</a> </li>
+                    <!-- <li><a href="#">Peek Inside My World</a></li> -->
                     <li>|</li>
                     <li class="nav-item"><a href="#">Code Journey</a></li>
                     <li>|</li>
@@ -38,31 +37,34 @@
                     <li>|</li>
                     <li class="nav-item"><a href="#">Blog</a></li>
                 </ul>
-                <!-- <div class="line"></div> -->
-                <hr>
-                <nav class="flex flexrow wrap justify-content-right align-items-center">
-                    <!-- <button class="veganburger" aria-label="Toggle menu"> -->
-                    <div class="veganburger" role="button" tabindex="0" aria-label="Toggle navigation menu">
+            </nav>
+            <!-- <div class="line"></div> -->
+            <hr>
+            <!-- <nav class="flex flexrow wrap justify-content-right align-items-center"> -->
+            <!-- <button class="veganburger" aria-label="Toggle menu"> -->
+            <!-- <div class="veganburger" role="button" tabindex="0" aria-label="Toggle navigation menu">
 
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                    <!-- </button> -->
-                    <ul class="flex flexrow wrap justify-content-right sixgap">
-                        <li><a href="#">HOME</a></li>
-                        <li><img class="icon" src="./images/searchone.svg" alt="Serach"></li>
-                    </ul>
-                </nav>
-                <div>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div> -->
 
-                    <!-- <hr> -->
-                    <ul class="flex align-items-center">
+            <!-- </button> -->
+            <ul class="flex flexrow wrap justify-content-right sixgap">
+                <li><a href="#">HOME</a></li>
+                <li><img class="icon" src="./images/searchone.svg" alt="Serach"></li>
+            </ul>
+            </nav>
+            <!-- <nav>
+                <div> -->
+
+            <!-- <hr> -->
+            <!-- <ul class="flex align-items-center">
                         <li id="burger-menu"></li>
                     </ul>
 
                 </div>
-            </nav>
+            </nav> -->
         </div>
     </header>
 
@@ -71,13 +73,13 @@
     =======================================-->
     <main class="container">
         <div class="content flex flexrow justify-content-center">
-            <div class="flex">
+            <div id="hero" class="flex">
                 <img class="avatar shadow self-center" src="./images/sh.png" alt="Portrait of Shaghayegh Sahandi">
             </div>
             <section class="flex flexcolumn">
                 <section class="txt flex flexcolumn">
-                    <h1>Hey there!</h1>
-                    <span>A Bit About Me:</span>
+                    <h2>Hey there!</h2>
+                    <h3>A Bit About Me:</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, laboriosam esse natus ipsam,
                         veniam accusamus aliquid, eos eligendi iusto facere optio recusandae facilis ut quaerat quia.
                         Exercitationem quae accusamus minus?

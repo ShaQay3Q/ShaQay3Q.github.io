@@ -123,11 +123,11 @@
 body {
 	overflow-x: hidden;
 	font-family: "Inter", sans-serif;
-	margin-top: 60px;
+	margin-top: 30px;
 	background-color: var(--bgc);
 }
 
-h1 {
+h2 {
 	font-size: var(--fs-rem);
 	font-weight: var(--fw-rem);
 	color: var(--fc-black);
@@ -285,7 +285,7 @@ ul {
                         HEADER
 ================================================================================================*/
 
-.logo {
+#logo {
 	height: 30pxBlog;
 	width: 30px;
 }
@@ -295,7 +295,7 @@ ul {
 	height: 7px;
 }
 
-.txt-style {
+h1 {
 	font-size: var(--fs-small);
 	font-weight: 900;
 	color: var(--fc-darkgray);
@@ -345,7 +345,7 @@ main {
 .txt {
 	gap: 10px;
 }
-.txt > span {
+h3 {
 	color: var(--fc-black);
 	font-size: var(--fs-large);
 	font-weight: 500;
