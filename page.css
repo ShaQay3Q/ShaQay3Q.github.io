@@ -221,7 +221,9 @@ ul {
 	gap: 1rem;
 }
 
-/* Responsive */
+/* Responsive */ 
+
+
 @media (min-width: 768px) {
 	.main-nav {
 		display: block;
