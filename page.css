@@ -159,6 +159,15 @@ header {
 #hero {
 	grid-area: hero;
 }
+#hero img {
+	width: 100%;
+	max-width: 600px; /* or whatever size you want */
+	aspect-ratio: 9 / 19; /* optional: modern way to lock ratio */
+	background-image: url("./images/shaport.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 main {
 	grid-area: main;
 }
