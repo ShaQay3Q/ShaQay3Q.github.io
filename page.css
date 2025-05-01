@@ -206,9 +206,12 @@ header {
 }
 
 main {
-	max-height: 50%;
+	display: flex;
+	align-self: center;
+	justify-self: center;
+	max-height: 60%;
 	grid-area: main;
-	/* margin-top: 7rem; */
+	/* margin-top: 5rem; */
 	/* padding-left: 0.6rem; */
 	/* padding-right: 10rem; */
 }
