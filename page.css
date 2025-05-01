@@ -130,6 +130,7 @@
 }
 
 body {
+	height: 100vh;
 	font-family: "Inter", sans-serif;
 	line-height: 1.6;
 	overflow-x: hidden;
@@ -142,8 +143,9 @@ body {
 		"header header header"
 		"hero . main"
 		/* ". . hr" */
-		". . footer";
-	gap: 1rem;
+		"hero . footer";
+	/* "hero . ."; */
+	/* gap: 1rem; */
 	margin: 0;
 	padding: 0;
 }
@@ -156,7 +158,7 @@ header {
 	grid-template-rows: auto;
 	grid-template-areas:
 		"logo . nav"
-		". . hhr"
+		"logo . hhr"
 		". . home-search";
 	/* margin-left: 3rem; */
 	/* margin-right: 3rem; */
@@ -183,12 +185,13 @@ header {
 	grid-area: hero;
 	height: 100%;
 	overflow: hidden;
-	position: relative;
+	display: inline-block;
+	position: static;
 }
 
 #hero img {
 	width: 100%;
-	height: 74.5%;
+	height: 107%;
 	/* max-width: 600px; or whatever size you want */
 	aspect-ratio: 9 / 19; /* optional: modern way to lock ratio */
 	/* background-image: url("./images/shaport.png"); */
@@ -196,9 +199,9 @@ header {
 	background-repeat: no-repeat;
 	/* background-position: center -45%; */
 	object-fit: cover;
-	object-position: center 75.5%; /* shift image upward by 10% */
-	transform: scale(0.88);
-	transform-origin: center; /* keeps it centered */
+	object-position: center 80%;
+	transform: scale(0.93);
+	/* transform-origin: center; keeps it centered */
 	display: block;
 }
 
