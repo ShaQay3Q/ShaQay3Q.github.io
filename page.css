@@ -143,17 +143,22 @@ body {
 		"hero . main"
 		"hr hr hr"
 		"footer footer footer";
+	gap: 1rem;
 }
 header {
 	grid-area: header;
 	display: grid;
 	/* max-width: 1400px; */
 	grid-template-columns: (repeat 1fr);
+	flex-wrap: wrap;
 	grid-template-rows: auto;
 	grid-template-areas:
 		"logo logo . nav nav nav nav"
 		". . . hhr hhr hhr hhr"
 		". . . . . home-search home-search";
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top: 2rem;
 }
 
 #hero {
@@ -170,6 +175,7 @@ header {
 }
 main {
 	grid-area: main;
+	margin-top: 7rem;
 }
 body hr {
 	grid-area: hr;
@@ -179,11 +185,14 @@ footer {
 }
 
 h2 {
-	font-size: var(--fs-rem);
+	font-size: var(--fs-small);
 	font-weight: var(--fw-rem);
-	color: var(--fc-black);
+	color: var(--fc-darkgreyleight);
 }
-
+h1 {
+	font-size: var(--fs-small);
+	color: var(--fc-softblacks);
+}
 .box {
 	background-color: var(--bgc);
 	border: 5px solid darkblue;
@@ -234,12 +243,14 @@ li {
 #logo {
 	display: flex;
 	flex-direction: row;
+	gap: 6px;
 	justify-content: left;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	justify-self: start;
 	grid-area: logo;
+	font-size: small;
 }
 
 nav {
