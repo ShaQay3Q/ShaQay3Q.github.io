@@ -138,7 +138,7 @@ body {
 	background-color: var(--bgc);
 	display: grid;
 	grid-template-columns: 30% 5% 65%;
-	grid-template-rows: auto;
+	grid-template-rows: 10% 70% 20%;
 	grid-template-areas:
 		"header header header"
 		"hero . main"
@@ -205,16 +205,6 @@ header {
 	display: block;
 }
 
-main {
-	display: flex;
-	align-self: center;
-	justify-self: center;
-	max-height: 60%;
-	grid-area: main;
-	/* margin-top: 5rem; */
-	/* padding-left: 0.6rem; */
-	/* padding-right: 10rem; */
-}
 body > hr {
 	grid-area: hr;
 	width: 100%;
@@ -231,7 +221,25 @@ footer {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background: lightblue;
+	/* background: lightblue; */
+	display: grid;
+	grid-template-rows: 1rf 1rf;
+	flex-wrap: wrap;
+	grid-template-columns: auto;
+	grid-template-areas:
+		"fhr fhr"
+		"address fsection";
+}
+
+footer > hr {
+	grid-area: fhr;
+	height: 1px;
+}
+address {
+	grid-area: address;
+}
+footer > section {
+	grid-area: fsection;
 }
 
 h2 {
@@ -261,6 +269,7 @@ h4 {
 }
 
 main p {
+	height: max-content;
 	width: 70%; /* Makes it stretch the full width of the parent */
 	display: block; /* Default, but good to be explicit */
 	text-align: justify; /* Optional: creates an edge-to-edge text look */
@@ -283,12 +292,21 @@ a {
 }
 
 main {
+	margin-left: 1rem;
+	/* margin-top: 20%; */
+	/* position: inherit; */
+	align-self: center;
+	justify-self: center;
+	grid-area: main;
+	/* margin-top: 5rem; */
+	/* padding-left: 0.6rem; */
+	/* padding-right: 10rem; */
 	display: flex;
 	flex-direction: column;
 	grid-area: main;
 	width: 100%;
-	height: 50%;
-	background: darkmagenta;
+	height: 80%;
+	/* background: darkmagenta; */
 }
 
 li {
@@ -329,6 +347,7 @@ nav {
 	width: 100%;
 }
 header hr {
+	height: 1px;
 	grid-area: hhr;
 	/* width: 100%; */
 }
