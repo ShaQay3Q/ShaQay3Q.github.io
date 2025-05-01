@@ -204,6 +204,8 @@ header {
 main {
 	grid-area: main;
 	margin-top: 7rem;
+	/* padding-left: 0.6rem; */
+	/* padding-right: 10rem; */
 }
 body hr {
 	grid-area: hr;
@@ -222,7 +224,14 @@ h1 {
 	color: var(--fc-softblacks);
 }
 h3 {
+	font-size: var(--fs-medium);
+	font-weight: var(--fw-rem);
 }
+h4 {
+	font-size: var(--fs-medium);
+	font-weight: var(--fs-medium);
+}
+
 .box {
 	background-color: var(--bgc);
 	border: 5px solid darkblue;
@@ -231,13 +240,17 @@ h3 {
 	/* font-size: var(--fs-rem); */
 }
 
-body p {
-	font-size: var(--fs-medium);
+main p {
+	width: 70%; /* Makes it stretch the full width of the parent */
+	display: block; /* Default, but good to be explicit */
+	text-align: justify; /* Optional: creates an edge-to-edge text look */
+	font-size: var(--fs-small);
 	font-weight: 300;
 	color: var(--fc-darkgray);
 	/* color: red; */
 	word-wrap: break-word;
-	max-width: 550px;
+	/* max-width: 600px; */
+	/* padding-right: 4rem; */
 }
 
 a {
@@ -250,6 +263,8 @@ a {
 main {
 	display: flex;
 	flex-direction: column;
+	grid-area: main;
+	width: 100%;
 }
 
 li {
